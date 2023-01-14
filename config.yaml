@@ -1,10 +1,10 @@
-baseurl: /
+baseurl: https://alexnorell.github.io/ethdenver-how-to-build-a-scalable-dapp/
 theme: hugo-webslides
 languageCode: en-us
 title: How to deploy and scale a Dapp
 params:
   author: Alex Norell
-  homepage: alexnorell.com
+  homepage: https://alexnorell.com
   webslides:
     banner: false
     slideshow: true
@@ -17,6 +17,10 @@ params:
     scrollWait: 450
     slideOffset: 50
     hideIndex: false
-blackfriday:
-  extensionsmask:
-    - autoHeaderIds
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
