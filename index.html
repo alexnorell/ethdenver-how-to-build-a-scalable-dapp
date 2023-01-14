@@ -1,0 +1,29 @@
+<!doctype html><html lang=en-us prefix="og: http://ogp.me/ns#"><head><meta name=generator content="Hugo 0.109.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Hugo-Webslides</title><meta name=author content="Alex Norell"><meta charset=utf-8><link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&subset=latin-ext" rel=stylesheet><link rel=stylesheet type=text/css media=all href=css/webslides.css><link rel=stylesheet type=text/css media=all href=css/svg-icons.css><link rel="shortcut icon" sizes=16x16 href=/img/favicons/favicon.png><link rel="shortcut icon" sizes=32x32 href=/img/favicons/favicon-32.png><link rel="apple-touch-icon icon" sizes=76x76 href=/img/favicons/favicon-76.png><link rel="apple-touch-icon icon" sizes=120x120 href=/img/favicons/favicon-120.png><link rel="apple-touch-icon icon" sizes=152x152 href=/img/favicons/favicon-152.png><link rel="apple-touch-icon icon" sizes=180x180 href=/img/favicons/favicon-180.png><link rel="apple-touch-icon icon" sizes=192x192 href=/img/favicons/favicon-192.png><meta name=mobile-web-app-capable content="yes"><meta name=theme-color content="#333333"></head><body><main role=main><article id=webslides><section id=slide1><div><p>Hugo-Webslides
+Use markdown to write contents and render with WebSlides to HTML. { .text-intro }</p><p><svg class="fa-github"><use xlink:href="#fa-github"/></svg>Github</p><p>WebSlides Demos
+Here&rsquo;s what you can do with WebSlides.</p><p><a href="#slide=10" title="Why WebSlides"><figure><img alt="Thumbnail Why WebSlides" src=https://webslides.tv/static/images/demos-why.png><figcaption><h2>Why WebSlides</h2></figcaption></figure></a><a href=https://webslides.tv/demos/landings title=Landings><figure><img alt="Thumbnail Landings" src=https://webslides.tv/static/images/demos-landings.png><figcaption><h2>Landings</h2></figcaption></figure></a><a href=https://webslides.tv/demos/portfolios title=Portfolios><figure><img alt="Thumbnail Portfolios" src=https://webslides.tv/static/images/demos-portfolios.png><figcaption><h2>Portfolios</h2></figcaption></figure></a><a href=https://webslides.tv/demos/apple title=Keynote><figure><img alt="Thumbnail Keynote" src=https://webslides.tv/static/images/demos-apple.png><figcaption><h2>Keynote</h2></figcaption></figure></a>{ .flexblock .gallery }
+More Examples
+Note. None of these slides are currently ported to Hugo-Webslides&mldr;YET.</p><p><a href=https://webslides.tv/demos/netflix-culture title="Netflix's Culture"><figure><img alt="Thumbnail Netflix's Culture" src=https://webslides.tv/static/images/demos-netflix.png><figcaption><h2>Netflix</h2></figcaption></figure></a><a href=https://webslides.tv/demos/longforms title="Longform Articles"><figure><img alt="Thumbnail Longform Articles" src=https://webslides.tv/static/images/demos-longforms.png><figcaption><h2>Longforms</h2></figcaption></figure></a><a href=https://webslides.tv/demos/interviews title=Interviews><figure><img alt="Thumbnail Interviews" src=https://webslides.tv/static/images/demos-interviews.png><figcaption><h2>Interviews</h2></figcaption></figure></a>{ .flexblock .gallery }
+Configuration
+You can modify WebSlides settings directly from your project config.toml. { .text-intro }</p><p>[params.webslides]
+banner = false
+slideshow = true
+vertical = false
+autoslide = false
+changeOnClick = false
+disableLoop = false
+minWheelDelta = 40
+disableNavigateOnScroll = false
+scrollWait = 450
+slideOffset = 50
+hideIndex = false
+|||v</p><p>All from one markdown file
+Use three dashes &ldquo;-&rdquo; to create a separate slide page.</p><div class=grid><div class=column><p>Slide1</p></div></div></div></section><section id=slide2><div><p>Slide2
+|||</p><p>content
+├── home
+│ ├── home1.md (weight: 1)
+│ └── home2.md (weight: 2)
+└── _index.md (initial page)
+|||</p><p>Or not.
+You can combine and arrange files with the weight parameter in front matter, and categorize .md files into different folders.</p><p>Slide Attributes
+Assign attributes to a slide by using the following notation.</p></div></section><section id=slide3><div><div><h6>Headers and Paragraphs</h6><h1 id=----hclass---header>Header</h1></div><p><div><h6>Lists</h6><ul><li>list1</li><li>list2</li></ul></div>{ .flexblock }</p></div></section></article></main><script src=js/webslides.min.js></script>
+<script>window.ws=new WebSlides({minWheelDelta:40,scrollWait:450,slideOffset:50})</script><script defer src=js/svg-icons.js></script></body></html>
