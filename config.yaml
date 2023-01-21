@@ -6,7 +6,7 @@ params:
   author: Alex Norell
   homepage: https://alexnorell.com
   webslides:
-    banner: false
+    banner: False
     slideshow: true
     vertical: false
     autoslide: false
@@ -16,7 +16,7 @@ params:
     disableNavigateOnScroll: false
     scrollWait: 450
     slideOffset: 50
-    hideIndex: false
+    hideIndex: true
 markup:
   goldmark:
     parser:
